@@ -1,4 +1,10 @@
 == README
+# Ruby on Rails チュートリアル：サンプルアプリケーション
+
+これは、以下のためのサンプルアプリケーションです。
+[*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.jp/)
+by [Michael Hartl](http://michaelhartl.com/).
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
