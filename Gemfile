@@ -48,9 +48,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :production do
-  gem 'pg', '0.12.2'
-end
+gem 'bootstrap-sass'
 
 group :test do
   gem 'capybara', '1.1.2'
