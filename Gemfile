@@ -21,8 +21,6 @@ gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-
-
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -37,7 +35,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -49,6 +47,14 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'bootstrap-sass'
+
+group :production do
+  gem 'pg'
+end
+
+group :development do
+  gem 'annotate', '2.5.0'
+end
 
 group :test do
   gem 'capybara', '1.1.2'
