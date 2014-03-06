@@ -21,6 +21,9 @@ ActiveRecord::Schema.define(version: 20140227072701) do
     t.string   "password_digest"
     t.string   "password"
     t.string   "password_confirmation"
+    t.string   "remember_token"
   end
+
+  add_index "users", ["remember_token"], name: "index_users_on_remember_token"
 
 end
