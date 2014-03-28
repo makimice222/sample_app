@@ -24,6 +24,12 @@ describe "Authentication" do
         before { click_link "Home" }
         it { should_not have_selector('div.alert.alert-error') }
       end
+
+      describe "followed by signout" do
+        before { click_link "Sign out" }
+        it { should have_link('Sign in') }
+      end
+
     end
   end  
 end
