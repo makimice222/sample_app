@@ -64,3 +64,6 @@ group :test do
   gem 'database_cleaner', '0.7.0'
 end
 
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
