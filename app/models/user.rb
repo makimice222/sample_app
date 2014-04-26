@@ -34,6 +34,12 @@ class User < ActiveRecord::Base
     Digest::SHA1.hexdigest(token.to_s)
   end
 
+  def feed
+    # このコードは準備段階です。
+    # 完全な実装は第11章「ユーザーをフォローする」を参照してください。
+    Micropost.where("user_id = ?", id)
+  end
+
   private
     def create_remember_token
       self.remember_token = User.encrypt(User.new_remember_token)
